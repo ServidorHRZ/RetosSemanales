@@ -1,0 +1,1112 @@
+{
+  "basic": {
+    "week1": {
+      "python": {
+        "title": "Introducción a Python",
+        "difficulty": "Básico",
+        "description": "En este reto aprenderás los fundamentos básicos de Python creando una calculadora simple.",
+        "requirements": [
+          "Crear una función que sume dos números",
+          "Implementar un bucle for simple", 
+          "Usar condicionales if/else"
+        ],
+        "examples": [
+          {
+            "input": "sum(5, 3)",
+            "output": "8"
+          }
+        ]
+      },
+      "java": {
+        "title": "Fundamentos de Java",
+        "difficulty": "Básico",
+        "description": "Aprende los conceptos básicos de Java implementando operaciones matemáticas simples.",
+        "requirements": [
+          "Crear una clase con métodos básicos",
+          "Implementar método para multiplicar dos números",
+          "Usar estructuras de control básicas"
+        ],
+        "examples": [
+          {
+            "input": "multiply(4, 3)",
+            "output": "12"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "Primeros pasos con C#",
+        "difficulty": "Básico",
+        "description": "Introduce los conceptos fundamentales de C# creando métodos simples de cálculo.",
+        "requirements": [
+          "Crear una clase Calculator",
+          "Implementar método de división",
+          "Manejar excepciones básicas"
+        ],
+        "examples": [
+          {
+            "input": "Divide(10, 2)",
+            "output": "5"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Introducción a C++",
+        "difficulty": "Básico",
+        "description": "Aprende las bases de C++ implementando funciones matemáticas básicas.",
+        "requirements": [
+          "Crear funciones con parámetros",
+          "Implementar operaciones aritméticas",
+          "Usar estructuras de control"
+        ],
+        "examples": [
+          {
+            "input": "subtract(8, 3)",
+            "output": "5"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Comenzando con Rust",
+        "difficulty": "Básico",
+        "description": "Aprende los fundamentos de Rust creando funciones matemáticas simples.",
+        "requirements": [
+          "Crear una función con tipos definidos",
+          "Implementar operaciones básicas",
+          "Manejar resultados con Result<T,E>"
+        ],
+        "examples": [
+          {
+            "input": "add(6, 4)",
+            "output": "10"
+          }
+        ]
+      },
+      "php": {
+        "title": "Primeros pasos en PHP",
+        "difficulty": "Básico",
+        "description": "Aprende PHP básico creando funciones para procesar números.",
+        "requirements": [
+          "Crear funciones con parámetros",
+          "Implementar operaciones matemáticas",
+          "Usar estructuras de control básicas"
+        ],
+        "examples": [
+          {
+            "input": "calculate(5, 3, '+')",
+            "output": "8"
+          }
+        ]
+      },
+      "web": {
+        "title": "Fundamentos Web",
+        "difficulty": "Básico",
+        "description": "Aprende HTML, CSS y JavaScript básico creando una calculadora web simple.",
+        "requirements": [
+          "Crear estructura HTML básica",
+          "Aplicar estilos CSS simples",
+          "Implementar funciones JavaScript básicas"
+        ],
+        "examples": [
+          {
+            "input": "Interfaz de calculadora",
+            "output": "Resultado visual y funcional"
+          }
+        ]
+      }
+    },
+    "week2": {
+      "python": {
+        "title": "Estructuras de Datos en Python",
+        "difficulty": "Básico",
+        "description": "Aprende a trabajar con listas, diccionarios y tuplas en Python.",
+        "requirements": [
+          "Crear y manipular listas",
+          "Trabajar con diccionarios",
+          "Implementar métodos de lista básicos"
+        ],
+        "examples": [
+          {
+            "input": "find_max([1, 5, 3, 8, 2])",
+            "output": "8"
+          }
+        ]
+      },
+      "java": {
+        "title": "Arrays y ArrayList en Java",
+        "difficulty": "Básico",
+        "description": "Maneja colecciones básicas en Java implementando métodos de búsqueda y ordenamiento.",
+        "requirements": [
+          "Crear y manipular Arrays",
+          "Usar ArrayList",
+          "Implementar búsqueda lineal"
+        ],
+        "examples": [
+          {
+            "input": "searchElement([1,2,3,4,5], 3)",
+            "output": "2 (índice encontrado)"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "Colecciones en C#",
+        "difficulty": "Básico",
+        "description": "Aprende a trabajar con Arrays y List<T> en C#.",
+        "requirements": [
+          "Manipular Arrays",
+          "Usar List<T>",
+          "Implementar métodos de ordenamiento básicos"
+        ],
+        "examples": [
+          {
+            "input": "SortList([3,1,4,1,5])",
+            "output": "[1,1,3,4,5]"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Vectores y Arrays en C++",
+        "difficulty": "Básico",
+        "description": "Maneja estructuras de datos básicas en C++.",
+        "requirements": [
+          "Trabajar con arrays",
+          "Usar vectores",
+          "Implementar algoritmos de búsqueda"
+        ],
+        "examples": [
+          {
+            "input": "reverseArray([1,2,3,4,5])",
+            "output": "[5,4,3,2,1]"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Vectores en Rust",
+        "difficulty": "Básico",
+        "description": "Aprende a trabajar con Vec y arrays en Rust.",
+        "requirements": [
+          "Crear y manipular Vec",
+          "Implementar iteradores",
+          "Usar métodos de colección"
+        ],
+        "examples": [
+          {
+            "input": "sum_vector([1,2,3,4,5])",
+            "output": "15"
+          }
+        ]
+      },
+      "php": {
+        "title": "Arrays en PHP",
+        "difficulty": "Básico",
+        "description": "Maneja arrays asociativos y numéricos en PHP.",
+        "requirements": [
+          "Crear arrays asociativos",
+          "Usar funciones de array",
+          "Implementar filtros básicos"
+        ],
+        "examples": [
+          {
+            "input": "filterArray([1,2,3,4,5], >3)",
+            "output": "[4,5]"
+          }
+        ]
+      },
+      "web": {
+        "title": "DOM y Eventos",
+        "difficulty": "Básico",
+        "description": "Manipula el DOM y maneja eventos en JavaScript.",
+        "requirements": [
+          "Seleccionar elementos del DOM",
+          "Manejar eventos click",
+          "Modificar estilos dinámicamente"
+        ],
+        "examples": [
+          {
+            "input": "Lista de tareas interactiva",
+            "output": "Agregar/eliminar tareas"
+          }
+        ]
+      }
+    },
+    "week3": {
+      "python": {
+        "title": "Manejo de Archivos en Python",
+        "difficulty": "Básico",
+        "description": "Aprende a leer y escribir archivos en Python.",
+        "requirements": [
+          "Leer archivos de texto",
+          "Escribir en archivos",
+          "Manejar excepciones de archivo"
+        ],
+        "examples": [
+          {
+            "input": "read_file('data.txt')",
+            "output": "Contenido del archivo"
+          }
+        ]
+      },
+      "java": {
+        "title": "I/O Streams en Java",
+        "difficulty": "Básico",
+        "description": "Trabaja con entrada/salida de archivos en Java.",
+        "requirements": [
+          "Usar FileReader/FileWriter",
+          "Implementar BufferedReader",
+          "Manejar excepciones I/O"
+        ],
+        "examples": [
+          {
+            "input": "writeToFile('hello.txt', 'Hello World')",
+            "output": "Archivo creado exitosamente"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "File I/O en C#",
+        "difficulty": "Básico",
+        "description": "Maneja archivos y streams en C#.",
+        "requirements": [
+          "Usar File y StreamReader",
+          "Implementar StreamWriter",
+          "Manejar excepciones de archivo"
+        ],
+        "examples": [
+          {
+            "input": "ReadAllLines('data.txt')",
+            "output": "['línea1', 'línea2']"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Archivos y Streams en C++",
+        "difficulty": "Básico",
+        "description": "Aprende a manejar archivos en C++.",
+        "requirements": [
+          "Usar fstream",
+          "Leer/escribir archivos",
+          "Manejar estados de archivo"
+        ],
+        "examples": [
+          {
+            "input": "copyFile('origen.txt', 'destino.txt')",
+            "output": "Archivo copiado correctamente"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Manejo de Archivos en Rust",
+        "difficulty": "Básico",
+        "description": "Trabaja con archivos usando las características de Rust.",
+        "requirements": [
+          "Usar std::fs::File",
+          "Implementar Read/Write traits",
+          "Manejar Result en I/O"
+        ],
+        "examples": [
+          {
+            "input": "read_to_string('config.txt')",
+            "output": "Ok(contenido_archivo)"
+          }
+        ]
+      },
+      "php": {
+        "title": "Manejo de Archivos PHP",
+        "difficulty": "Básico",
+        "description": "Aprende a trabajar con archivos en PHP.",
+        "requirements": [
+          "Usar fopen/fclose",
+          "Leer/escribir archivos",
+          "Manejar permisos de archivo"
+        ],
+        "examples": [
+          {
+            "input": "file_get_contents('data.txt')",
+            "output": "Contenido del archivo"
+          }
+        ]
+      },
+      "web": {
+        "title": "Almacenamiento Web",
+        "difficulty": "Básico",
+        "description": "Aprende a usar localStorage y sessionStorage.",
+        "requirements": [
+          "Implementar localStorage",
+          "Usar sessionStorage",
+          "Manejar datos JSON"
+        ],
+        "examples": [
+          {
+            "input": "Aplicación de notas local",
+            "output": "Notas persistentes en el navegador"
+          }
+        ]
+      }
+    }
+  },
+  "intermediate": {
+    "week1": {
+      "python": {
+        "title": "Programación Orientada a Objetos en Python",
+        "difficulty": "Intermedio",
+        "description": "Implementa un sistema de gestión de biblioteca usando POO.",
+        "requirements": [
+          "Crear clases con herencia",
+          "Implementar métodos especiales",
+          "Usar decoradores @property"
+        ],
+        "examples": [
+          {
+            "input": "biblioteca.prestar_libro('Python Avanzado', 'usuario1')",
+            "output": "Libro prestado exitosamente"
+          }
+        ]
+      },
+      "java": {
+        "title": "Patrones de Diseño en Java",
+        "difficulty": "Intermedio",
+        "description": "Implementa un sistema de notificaciones usando el patrón Observer.",
+        "requirements": [
+          "Implementar patrón Observer",
+          "Usar interfaces",
+          "Manejar colecciones de observadores"
+        ],
+        "examples": [
+          {
+            "input": "notificationSystem.notify('Nuevo mensaje')",
+            "output": "Todos los observadores notificados"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "LINQ y Lambda en C#",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla un sistema de análisis de datos usando LINQ.",
+        "requirements": [
+          "Usar expresiones LINQ",
+          "Implementar métodos de extensión",
+          "Trabajar con Lambda expressions"
+        ],
+        "examples": [
+          {
+            "input": "datos.Where(x => x.Valor > 100).Select(x => x.Nombre)",
+            "output": "Lista filtrada y transformada"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Templates y STL en C++",
+        "difficulty": "Intermedio",
+        "description": "Implementa una biblioteca de estructuras de datos genéricas.",
+        "requirements": [
+          "Crear templates de clase",
+          "Usar contenedores STL",
+          "Implementar algoritmos genéricos"
+        ],
+        "examples": [
+          {
+            "input": "Stack<int> stack; stack.push(5);",
+            "output": "Elemento agregado al stack"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Concurrencia en Rust",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla un sistema de procesamiento paralelo de datos.",
+        "requirements": [
+          "Usar threads",
+          "Implementar canales",
+          "Manejar sincronización"
+        ],
+        "examples": [
+          {
+            "input": "process_data_parallel(large_dataset)",
+            "output": "Datos procesados en paralelo"
+          }
+        ]
+      },
+      "php": {
+        "title": "APIs RESTful con PHP",
+        "difficulty": "Intermedio",
+        "description": "Crea una API RESTful para un sistema de blog.",
+        "requirements": [
+          "Implementar CRUD",
+          "Usar autenticación JWT",
+          "Manejar respuestas JSON"
+        ],
+        "examples": [
+          {
+            "input": "GET /api/posts",
+            "output": "Lista de posts en JSON"
+          }
+        ]
+      },
+      "web": {
+        "title": "Single Page Application",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla una SPA con vanilla JavaScript.",
+        "requirements": [
+          "Implementar routing",
+          "Usar Fetch API",
+          "Manejar estado de la aplicación"
+        ],
+        "examples": [
+          {
+            "input": "Router.navigate('/dashboard')",
+            "output": "Vista actualizada sin recargar"
+          }
+        ]
+      }
+    },
+    "week2": {
+      "python": {
+        "title": "Procesamiento de Datos con Pandas",
+        "difficulty": "Intermedio",
+        "description": "Analiza y visualiza datos usando Pandas y Matplotlib.",
+        "requirements": [
+          "Manipular DataFrames",
+          "Crear visualizaciones",
+          "Realizar análisis estadístico"
+        ],
+        "examples": [
+          {
+            "input": "df.groupby('categoria').mean()",
+            "output": "Estadísticas por categoría"
+          }
+        ]
+      },
+      "java": {
+        "title": "Programación Concurrente en Java",
+        "difficulty": "Intermedio",
+        "description": "Implementa un pool de threads para procesamiento paralelo.",
+        "requirements": [
+          "Usar ExecutorService",
+          "Implementar Future/CompletableFuture",
+          "Manejar sincronización"
+        ],
+        "examples": [
+          {
+            "input": "executorService.submit(task)",
+            "output": "Tarea ejecutada en background"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "ASP.NET Core Web API",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla una API RESTful con ASP.NET Core.",
+        "requirements": [
+          "Implementar controladores",
+          "Usar Entity Framework",
+          "Configurar middleware"
+        ],
+        "examples": [
+          {
+            "input": "POST /api/productos",
+            "output": "Producto creado exitosamente"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Programación de Red en C++",
+        "difficulty": "Intermedio",
+        "description": "Implementa un servidor TCP/IP multihilo.",
+        "requirements": [
+          "Usar sockets",
+          "Implementar multithreading",
+          "Manejar conexiones concurrentes"
+        ],
+        "examples": [
+          {
+            "input": "server.accept()",
+            "output": "Nueva conexión aceptada"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Sistemas Embebidos con Rust",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla firmware para un microcontrolador.",
+        "requirements": [
+          "Usar traits específicos",
+          "Implementar interrupciones",
+          "Manejar periféricos"
+        ],
+        "examples": [
+          {
+            "input": "led.toggle()",
+            "output": "LED cambiado de estado"
+          }
+        ]
+      },
+      "php": {
+        "title": "Framework MVC Personalizado",
+        "difficulty": "Intermedio",
+        "description": "Crea un framework MVC ligero desde cero.",
+        "requirements": [
+          "Implementar routing",
+          "Crear sistema de templates",
+          "Manejar sesiones"
+        ],
+        "examples": [
+          {
+            "input": "Router::get('/home', 'HomeController@index')",
+            "output": "Ruta registrada correctamente"
+          }
+        ]
+      },
+      "web": {
+        "title": "WebSocket Chat en Tiempo Real",
+        "difficulty": "Intermedio",
+        "description": "Implementa un chat en tiempo real con WebSocket.",
+        "requirements": [
+          "Configurar WebSocket",
+          "Manejar conexiones",
+          "Implementar rooms"
+        ],
+        "examples": [
+          {
+            "input": "ws.send(message)",
+            "output": "Mensaje enviado a todos los usuarios"
+          }
+        ]
+      }
+    },
+    "week3": {
+      "python": {
+        "title": "Machine Learning Básico",
+        "difficulty": "Intermedio",
+        "description": "Implementa algoritmos de clasificación y regresión.",
+        "requirements": [
+          "Usar scikit-learn",
+          "Preprocesar datos",
+          "Evaluar modelos"
+        ],
+        "examples": [
+          {
+            "input": "model.fit(X_train, y_train)",
+            "output": "Modelo entrenado con 95% precisión"
+          }
+        ]
+      },
+      "java": {
+        "title": "Spring Boot Microservicio",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla un microservicio con Spring Boot.",
+        "requirements": [
+          "Configurar Spring Boot",
+          "Implementar REST endpoints",
+          "Usar JPA/Hibernate"
+        ],
+        "examples": [
+          {
+            "input": "GET /api/usuarios",
+            "output": "Lista de usuarios paginada"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "Aplicación WPF con MVVM",
+        "difficulty": "Intermedio",
+        "description": "Crea una aplicación de escritorio usando MVVM.",
+        "requirements": [
+          "Implementar MVVM",
+          "Usar Data Binding",
+          "Crear Commands"
+        ],
+        "examples": [
+          {
+            "input": "ViewModel.SaveCommand.Execute()",
+            "output": "Datos guardados en la base de datos"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Motor de Juegos 2D Simple",
+        "difficulty": "Intermedio",
+        "description": "Implementa un motor de juegos 2D básico.",
+        "requirements": [
+          "Usar SDL2",
+          "Implementar física básica",
+          "Manejar colisiones"
+        ],
+        "examples": [
+          {
+            "input": "game.update(deltaTime)",
+            "output": "Estado del juego actualizado"
+          }
+        ]
+      },
+      "rust": {
+        "title": "CLI Avanzada",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla una herramienta CLI compleja.",
+        "requirements": [
+          "Usar clap",
+          "Implementar subcomandos",
+          "Manejar configuración"
+        ],
+        "examples": [
+          {
+            "input": "tool config set --key value",
+            "output": "Configuración actualizada"
+          }
+        ]
+      },
+      "php": {
+        "title": "Sistema de Caché Personalizado",
+        "difficulty": "Intermedio",
+        "description": "Implementa un sistema de caché multinivel.",
+        "requirements": [
+          "Usar Redis/Memcached",
+          "Implementar caché en memoria",
+          "Manejar invalidación"
+        ],
+        "examples": [
+          {
+            "input": "cache.get('key', ttl: 3600)",
+            "output": "Dato recuperado de caché"
+          }
+        ]
+      },
+      "web": {
+        "title": "PWA con Service Workers",
+        "difficulty": "Intermedio",
+        "description": "Convierte una aplicación web en PWA.",
+        "requirements": [
+          "Implementar Service Worker",
+          "Configurar caché",
+          "Manejar offline"
+        ],
+        "examples": [
+          {
+            "input": "sw.register()",
+            "output": "PWA instalada y funcionando offline"
+          }
+        ]
+      }
+    }
+  },
+  "advanced": {
+    "week1": {
+      "python": {
+        "title": "Sistema Distribuido de Procesamiento",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla un sistema distribuido de procesamiento de datos en tiempo real.",
+        "requirements": [
+          "Usar Apache Kafka/RabbitMQ",
+          "Implementar procesamiento paralelo",
+          "Manejar tolerancia a fallos"
+        ],
+        "examples": [
+          {
+            "input": "stream.process(data)",
+            "output": "Datos procesados en cluster"
+          }
+        ]
+      },
+      "javascript": {
+        "title": "Framework de Testing E2E",
+        "difficulty": "Avanzado", 
+        "description": "Crea un framework de pruebas end-to-end personalizado.",
+        "requirements": [
+          "Implementar runner de pruebas",
+          "Crear sistema de reportes",
+          "Manejar paralelización"
+        ],
+        "examples": [
+          {
+            "input": "test.run(suite)",
+            "output": "Reporte detallado de pruebas"
+          }
+        ]
+      },
+      "java": {
+        "title": "Motor de Reglas de Negocio",
+        "difficulty": "Avanzado",
+        "description": "Implementa un motor de reglas de negocio flexible.",
+        "requirements": [
+          "Usar patrón interpreter",
+          "Implementar DSL",
+          "Manejar reglas complejas"
+        ],
+        "examples": [
+          {
+            "input": "rules.evaluate(context)",
+            "output": "Decisión basada en reglas"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Sistema de Blockchain",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla una implementación básica de blockchain.",
+        "requirements": [
+          "Implementar proof of work",
+          "Manejar consenso distribuido",
+          "Crear smart contracts básicos"
+        ],
+        "examples": [
+          {
+            "input": "chain.addBlock(data)",
+            "output": "Bloque minado y agregado"
+          }
+        ]
+      },
+      "php": {
+        "title": "Framework de Middleware",
+        "difficulty": "Avanzado",
+        "description": "Crea un framework de middleware modular.",
+        "requirements": [
+          "Implementar pipeline",
+          "Manejar dependencias",
+          "Crear plugins dinámicos"
+        ],
+        "examples": [
+          {
+            "input": "middleware.process(request)",
+            "output": "Respuesta procesada"
+          }
+        ]
+      },
+      "web": {
+        "title": "Framework Frontend Reactivo",
+        "difficulty": "Avanzado",
+        "description": "Implementa un mini framework frontend reactivo.",
+        "requirements": [
+          "Crear virtual DOM",
+          "Implementar reactividad",
+          "Manejar estado global"
+        ],
+        "examples": [
+          {
+            "input": "component.render()",
+            "output": "UI actualizada reactivamente"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Motor de Renderizado 3D",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla un motor de renderizado 3D básico usando OpenGL.",
+        "requirements": [
+          "Implementar pipeline gráfico",
+          "Crear sistema de shaders",
+          "Manejar transformaciones 3D",
+          "Implementar cámara y proyecciones",
+          "Optimizar rendimiento de renderizado"
+        ],
+        "examples": [
+          {
+            "input": "renderer.render(scene)",
+            "output": "Escena 3D renderizada con iluminación"
+          }
+        ]
+      }
+    },
+    "week2": {
+      "python": {
+        "title": "Motor de Machine Learning",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla un motor de ML personalizado.",
+        "requirements": [
+          "Implementar algoritmos base",
+          "Crear pipeline de entrenamiento",
+          "Optimizar rendimiento"
+        ],
+        "examples": [
+          {
+            "input": "model.train(data)",
+            "output": "Modelo entrenado y optimizado"
+          }
+        ]
+      },
+      "javascript": {
+        "title": "Compilador de DSL",
+        "difficulty": "Avanzado",
+        "description": "Crea un compilador para un lenguaje específico de dominio.",
+        "requirements": [
+          "Implementar lexer/parser",
+          "Generar código",
+          "Optimizar salida"
+        ],
+        "examples": [
+          {
+            "input": "compiler.compile(source)",
+            "output": "Código optimizado generado"
+          }
+        ]
+      },
+      "java": {
+        "title": "Framework de Microservicios",
+        "difficulty": "Avanzado",
+        "description": "Implementa un framework ligero para microservicios.",
+        "requirements": [
+          "Crear service discovery",
+          "Implementar circuit breaker",
+          "Manejar configuración distribuida"
+        ],
+        "examples": [
+          {
+            "input": "service.deploy()",
+            "output": "Microservicio desplegado"
+          }
+        ]
+      },
+      "rust": {
+        "title": "Motor de Base de Datos",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla un motor de base de datos simple.",
+        "requirements": [
+          "Implementar almacenamiento",
+          "Crear query engine",
+          "Manejar transacciones"
+        ],
+        "examples": [
+          {
+            "input": "db.query(sql)",
+            "output": "Resultados optimizados"
+          }
+        ]
+      },
+      "php": {
+        "title": "Sistema de Orquestación",
+        "difficulty": "Avanzado",
+        "description": "Crea un sistema de orquestación de procesos.",
+        "requirements": [
+          "Manejar workflows",
+          "Implementar rollbacks",
+          "Coordinar servicios"
+        ],
+        "examples": [
+          {
+            "input": "orchestrator.execute(flow)",
+            "output": "Proceso completado"
+          }
+        ]
+      },
+      "web": {
+        "title": "Compilador de WebAssembly",
+        "difficulty": "Avanzado",
+        "description": "Implementa un compilador simple a WebAssembly.",
+        "requirements": [
+          "Generar código WASM",
+          "Optimizar rendimiento",
+          "Integrar con JS"
+        ],
+        "examples": [
+          {
+            "input": "compile(source)",
+            "output": "Módulo WASM optimizado"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Sistema de Física en Tiempo Real",
+        "difficulty": "Avanzado",
+        "description": "Implementa un motor de física para simulaciones en tiempo real.",
+        "requirements": [
+          "Crear sistema de colisiones",
+          "Implementar dinámica de cuerpos rígidos",
+          "Manejar constraints y joints",
+          "Optimizar detección de colisiones",
+          "Implementar integración numérica"
+        ],
+        "examples": [
+          {
+            "input": "physics.simulate(deltaTime)",
+            "output": "Estado físico actualizado con colisiones"
+          }
+        ]
+      }
+    },
+    "week3": {
+      "python": {
+        "title": "Machine Learning Básico",
+        "difficulty": "Intermedio",
+        "description": "Implementa algoritmos de clasificación y regresión.",
+        "requirements": [
+          "Usar scikit-learn",
+          "Preprocesar datos",
+          "Evaluar modelos"
+        ],
+        "examples": [
+          {
+            "input": "model.fit(X_train, y_train)",
+            "output": "Modelo entrenado con 95% precisión"
+          }
+        ]
+      },
+      "java": {
+        "title": "Spring Boot Microservicio",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla un microservicio con Spring Boot.",
+        "requirements": [
+          "Configurar Spring Boot",
+          "Implementar REST endpoints",
+          "Usar JPA/Hibernate"
+        ],
+        "examples": [
+          {
+            "input": "GET /api/usuarios",
+            "output": "Lista de usuarios paginada"
+          }
+        ]
+      },
+      "csharp": {
+        "title": "Aplicación WPF con MVVM",
+        "difficulty": "Intermedio",
+        "description": "Crea una aplicación de escritorio usando MVVM.",
+        "requirements": [
+          "Implementar MVVM",
+          "Usar Data Binding",
+          "Crear Commands"
+        ],
+        "examples": [
+          {
+            "input": "ViewModel.SaveCommand.Execute()",
+            "output": "Datos guardados en la base de datos"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Motor de Juegos 2D Simple",
+        "difficulty": "Intermedio",
+        "description": "Implementa un motor de juegos 2D básico.",
+        "requirements": [
+          "Usar SDL2",
+          "Implementar física básica",
+          "Manejar colisiones"
+        ],
+        "examples": [
+          {
+            "input": "game.update(deltaTime)",
+            "output": "Estado del juego actualizado"
+          }
+        ]
+      },
+      "rust": {
+        "title": "CLI Avanzada",
+        "difficulty": "Intermedio",
+        "description": "Desarrolla una herramienta CLI compleja.",
+        "requirements": [
+          "Usar clap",
+          "Implementar subcomandos",
+          "Manejar configuración"
+        ],
+        "examples": [
+          {
+            "input": "tool config set --key value",
+            "output": "Configuración actualizada"
+          }
+        ]
+      },
+      "php": {
+        "title": "Sistema de Caché Personalizado",
+        "difficulty": "Intermedio",
+        "description": "Implementa un sistema de caché multinivel.",
+        "requirements": [
+          "Usar Redis/Memcached",
+          "Implementar caché en memoria",
+          "Manejar invalidación"
+        ],
+        "examples": [
+          {
+            "input": "cache.get('key', ttl: 3600)",
+            "output": "Dato recuperado de caché"
+          }
+        ]
+      },
+      "web": {
+        "title": "PWA con Service Workers",
+        "difficulty": "Intermedio",
+        "description": "Convierte una aplicación web en PWA.",
+        "requirements": [
+          "Implementar Service Worker",
+          "Configurar caché",
+          "Manejar offline"
+        ],
+        "examples": [
+          {
+            "input": "sw.register()",
+            "output": "PWA instalada y funcionando offline"
+          }
+        ]
+      },
+      "cpp": {
+        "title": "Compilador de Lenguaje Personalizado",
+        "difficulty": "Avanzado",
+        "description": "Desarrolla un compilador completo para un lenguaje de programación simple.",
+        "requirements": [
+          "Implementar lexer y parser",
+          "Crear análisis semántico",
+          "Generar código intermedio",
+          "Optimizar código generado",
+          "Implementar backend para generación de ejecutables"
+        ],
+        "examples": [
+          {
+            "input": "compiler.compile('source.lang')",
+            "output": "Ejecutable optimizado generado"
+          }
+        ]
+      }
+    }
+  },
+  "master": {
+    "basic": {
+      "title": "Sistema de Gestión de Tareas",
+      "difficulty": "Master Básico",
+      "description": "Desarrolla un sistema completo de gestión de tareas que combine todos los conceptos básicos aprendidos.",
+      "requirements": [
+        "Implementar CRUD completo de tareas",
+        "Usar estructuras de datos para organización",
+        "Implementar sistema de archivos para persistencia",
+        "Crear interfaz de usuario interactiva",
+        "Aplicar validaciones y manejo de errores"
+      ],
+      "examples": [
+        {
+          "input": "Sistema completo funcionando",
+          "output": "Gestión de tareas con persistencia"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Mini Framework MVC",
+      "difficulty": "Master Intermedio",
+      "description": "Crea un mini framework MVC que implemente los patrones y conceptos intermedios aprendidos.",
+      "requirements": [
+        "Implementar arquitectura MVC",
+        "Crear sistema de routing",
+        "Implementar ORM básico",
+        "Manejar sesiones y autenticación",
+        "Crear sistema de templates"
+      ],
+      "examples": [
+        {
+          "input": "Framework funcionando",
+          "output": "Aplicación web MVC completa"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Plataforma de Microservicios",
+      "difficulty": "Master Avanzado",
+      "description": "Desarrolla una plataforma de microservicios que integre todos los conceptos avanzados.",
+      "requirements": [
+        "Implementar arquitectura de microservicios",
+        "Crear sistema de mensajería",
+        "Implementar cache distribuido",
+        "Manejar balanceo de carga",
+        "Implementar monitoring y logging"
+      ],
+      "examples": [
+        {
+          "input": "Plataforma completa",
+          "output": "Sistema distribuido funcionando"
+        }
+      ]
+    }
+  }
+}

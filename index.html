@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Retos Semanales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1><i class="fas fa-code"></i> Retos de Programación</h1>
+            <p><i class="fas fa-rocket"></i> ¡Mejora tus habilidades semana a semana!</p>
+            <p class="company-logo"><i class="fas fa-microchip"></i> <span>Tecnología</span> <strong>HRZ</strong></p>
+        </div>
+    </header>
+
+    <main class="levels-container">
+        <!-- Nivel Básico -->
+        <section class="level-section" id="basic-level">
+            <div class="level-header">
+                <i class="far fa-star"></i>
+                <h2>Nivel Básico</h2>
+            </div>
+            <div class="challenges-grid">
+                <!-- Semana 1 -->
+                <div class="challenge-card" data-week="1">
+                    <div class="card-header">
+                        <div class="medal bronze">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Básico</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 1</h3>
+                        <p>Fundamentos de Programación</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status active">
+                            <i class="fas fa-lock-open"></i> Disponible
+                        </span>
+                        <button class="start-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 2 -->
+                <div class="challenge-card" data-week="2">
+                    <div class="card-header">
+                        <div class="medal bronze">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Básico</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 2</h3>
+                        <p>Estructuras de Control</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status active">
+                            <i class="fas fa-lock-open"></i> Disponible
+                        </span>
+                        <button class="start-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 3 -->
+                <div class="challenge-card" data-week="3">
+                    <div class="card-header">
+                        <div class="medal bronze">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Básico</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 3</h3>
+                        <p>Funciones Básicas</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status locked">
+                            <i class="fas fa-lock"></i> Bloqueado
+                        </span>
+                        <button class="start-btn" disabled>Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nivel Intermedio -->
+        <section class="level-section" id="intermediate-level">
+            <div class="level-header">
+                <i class="fas fa-star-half-alt"></i>
+                <h2>Nivel Intermedio</h2>
+            </div>
+            <div class="challenges-grid">
+                <!-- Semana 1 Intermedio -->
+                <div class="challenge-card" data-week="1">
+                    <div class="card-header">
+                        <div class="medal silver">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Intermedio</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 1</h3>
+                        <p>Estructuras Avanzadas</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status active">
+                            <i class="fas fa-lock-open"></i> Disponible
+                        </span>
+                        <button class="start-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 2 Intermedio -->
+                <div class="challenge-card" data-week="2">
+                    <div class="card-header">
+                        <div class="medal silver">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Intermedio</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 2</h3>
+                        <p>Programación Orientada a Objetos</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status locked">
+                            <i class="fas fa-lock"></i> Bloqueado
+                        </span>
+                        <button class="start-btn" disabled>Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 3 Intermedio -->
+                <div class="challenge-card" data-week="3">
+                    <div class="card-header">
+                        <div class="medal silver">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Intermedio</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 3</h3>
+                        <p>Manejo de Excepciones</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status locked">
+                            <i class="fas fa-lock"></i> Bloqueado
+                        </span>
+                        <button class="start-btn" disabled>Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nivel Avanzado -->
+        <section class="level-section" id="advanced-level">
+            <div class="level-header">
+                <i class="fas fa-star"></i>
+                <h2>Nivel Avanzado</h2>
+            </div>
+            <div class="challenges-grid">
+                <!-- Semana 1 Avanzado -->
+                <div class="challenge-card" data-week="1">
+                    <div class="card-header">
+                        <div class="medal gold">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Avanzado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 1</h3>
+                        <p>Algoritmos Complejos</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status active">
+                            <i class="fas fa-lock-open"></i> Disponible
+                        </span>
+                        <button class="start-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 2 Avanzado -->
+                <div class="challenge-card" data-week="2">
+                    <div class="card-header">
+                        <div class="medal gold">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Avanzado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 2</h3>
+                        <p>Patrones de Diseño</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status locked">
+                            <i class="fas fa-lock"></i> Bloqueado
+                        </span>
+                        <button class="start-btn" disabled>Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Semana 3 Avanzado -->
+                <div class="challenge-card" data-week="3">
+                    <div class="card-header">
+                        <div class="medal gold">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <span class="difficulty">Avanzado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> Semana 3</h3>
+                        <p>Optimización y Rendimiento</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status locked">
+                            <i class="fas fa-lock"></i> Bloqueado
+                        </span>
+                        <button class="start-btn" disabled>Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Master -->
+        <section class="level-section" id="master-level">
+            <div class="level-header">
+                <i class="fas fa-crown"></i>
+                <h2>Nivel Master</h2>
+            </div>
+            <div class="challenges-grid">
+                <!-- Reto Master Básico -->
+                <div class="challenge-card master-card master-basic" data-level="basic" data-type="master">
+                    <div class="card-header">
+                        <div class="medal master-bronze">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <span class="difficulty">Master Básico</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-star"></i> Reto Master Básico</h3>
+                        <p>Proyecto Final Nivel Básico</p>
+                        <div class="progress-bar">
+                            <div class="progress master-basic-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status master-basic">
+                            <i class="fas fa-crown"></i> Desafío Master
+                        </span>
+                        <button class="start-btn master-btn master-basic-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Reto Master Intermedio -->
+                <div class="challenge-card master-card master-intermediate" data-level="intermediate" data-type="master">
+                    <div class="card-header">
+                        <div class="medal master-silver">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <span class="difficulty">Master Intermedio</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-star"></i> Reto Master Intermedio</h3>
+                        <p>Proyecto Final Nivel Intermedio</p>
+                        <div class="progress-bar">
+                            <div class="progress master-intermediate-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status master-intermediate">
+                            <i class="fas fa-crown"></i> Desafío Master
+                        </span>
+                        <button class="start-btn master-btn master-intermediate-btn">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Reto Master Avanzado -->
+                <div class="challenge-card master-card master-advanced" data-level="advanced" data-type="master">
+                    <div class="card-header">
+                        <div class="medal master-gold">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <span class="difficulty">Master Avanzado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-star"></i> Reto Master Avanzado</h3>
+                        <p>Proyecto Final Nivel Avanzado</p>
+                        <div class="progress-bar">
+                            <div class="progress master-advanced-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="status master-advanced">
+                            <i class="fas fa-crown"></i> Desafío Master
+                        </span>
+                        <button class="start-btn master-btn master-advanced-btn">Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Nueva sección de premios y clasificación -->
+    <section class="rewards-section">
+        <div class="rewards-container">
+            <h2><i class="fas fa-trophy"></i> Premios del Reto</h2>
+            <div class="podium">
+                <div class="podium-place second">
+                    <div class="trophy">
+                        <i class="fas fa-medal"></i>
+                        <div class="reward">$2</div>
+                    </div>
+                    <div class="platform">
+                        <div class="winner-name"></div>
+                    </div>
+                </div>
+                <div class="podium-place first">
+                    <div class="trophy">
+                        <i class="fas fa-trophy"></i>
+                        <div class="reward">$3</div>
+                    </div>
+                    <div class="platform">
+                        <div class="winner-name"></div>
+                    </div>
+                </div>
+                <div class="podium-place third">
+                    <div class="trophy">
+                        <i class="fas fa-award"></i>
+                        <div class="reward">$1</div>
+                    </div>
+                    <div class="platform">
+                        <div class="winner-name"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="language-modal">
+        <div class="modal-content">
+            <h2>Selecciona un Lenguaje</h2>
+            <div class="languages-grid">
+                <button class="language-btn" data-language="python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </button>
+                <button class="language-btn" data-language="java">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </button>
+                <button class="language-btn" data-language="csharp">
+                    <i class="fas fa-code"></i>
+                    <span>C#</span>
+                </button>
+                <button class="language-btn" data-language="cpp">
+                    <i class="fas fa-code"></i>
+                    <span>C++</span>
+                </button>
+                <button class="language-btn" data-language="rust">
+                    <i class="fas fa-cog"></i>
+                    <span>Rust</span>
+                </button>
+                <button class="language-btn" data-language="php">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </button>
+                <button class="language-btn" data-language="web">
+                    <i class="fas fa-globe"></i>
+                    <span>Web (HTML/CSS/JS)</span>
+                </button>
+            </div>
+            <button class="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="challenge-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="challenge-title">Título del Reto</h2>
+                <button class="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="challenge-info">
+                    <div class="challenge-details">
+                        <p id="challenge-level"></p>
+                        <p id="challenge-week"></p>
+                        <p id="challenge-language"></p>
+                    </div>
+                    <div class="challenge-description" id="challenge-description">
+                        <!-- La descripción del reto se cargará aquí -->
+                    </div>
+                    <button class="submit-btn">Entregar Solución</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

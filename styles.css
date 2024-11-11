@@ -1,0 +1,900 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --bronze-color: #cd7f32;
+    --silver-color: #c0c0c0;
+    --gold-color: #ffd700;
+    --master-color: #dc2626;
+    --master-secondary: #991b1b;
+    --background-color: #0f172a;
+    --card-background: #1e293b;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --card-hover-bg: #2d3748;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(at 40% 20%, rgba(37, 99, 235, 0.1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, rgba(147, 51, 234, 0.1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgba(205, 127, 50, 0.1) 0px, transparent 50%);
+}
+
+.main-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content i {
+    margin-right: 0.5rem;
+}
+
+.levels-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.level-section {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.level-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.challenge-card {
+    background: var(--card-background);
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    background: var(--card-hover-bg);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.medal {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.medal.bronze {
+    background: linear-gradient(135deg, #804A00, #CD7F32);
+    border: 2px solid #96601e;
+}
+
+.medal.silver {
+    background: linear-gradient(135deg, #757575, #C0C0C0);
+    border: 2px solid #919191;
+}
+
+.medal.gold {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: 2px solid #ffb700;
+}
+
+.medal i {
+    color: white;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.difficulty {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.status.active {
+    color: #10b981;
+    font-weight: 500;
+}
+
+.status.locked {
+    color: #ef4444;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.start-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.challenge-card .status.locked {
+    color: #dc2626;
+}
+
+.challenge-card .start-btn:disabled {
+    background-color: var(--text-secondary);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.level-header i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+#basic-level .level-header i { color: var(--bronze-color); }
+#intermediate-level .level-header i { color: var(--silver-color); }
+#advanced-level .level-header i { color: var(--gold-color); }
+
+@media (max-width: 768px) {
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-height: 85vh;
+    overflow: hidden;
+    background: var(--card-background);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: modalSlideIn 0.4s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Título del reto */
+#challenge-title {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#challenge-title::before {
+    content: "\f121";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+/* Detalles del reto */
+.challenge-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.challenge-details p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.challenge-details p:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones del reto */
+.challenge-section {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.challenge-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-section h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.challenge-section h3 i {
+    font-size: 1.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
+/* Ejemplos de código */
+.code-example {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+    font-family: 'Consolas', monospace;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.code-example::before {
+    content: 'Ejemplo';
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Botón de entregar */
+.submit-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.submit-btn::before {
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Scroll personalizado */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+/* Botón de cerrar */
+.close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+    z-index: 10;
+}
+
+.close-modal:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    transform: rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .challenge-details {
+        grid-template-columns: 1fr;
+    }
+
+    #challenge-title {
+        font-size: 1.5rem;
+    }
+
+    .challenge-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para el modal de selección de lenguaje */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.language-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-btn i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.language-btn span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores específicos para cada lenguaje */
+.language-btn[data-language="python"] i { color: #3776AB; }
+.language-btn[data-language="java"] i { color: #f89820; }
+.language-btn[data-language="javascript"] i { color: #F7DF1E; }
+.language-btn[data-language="cpp"] i { color: #00599C; }
+.language-btn[data-language="rust"] i { color: #DEA584; }
+.language-btn[data-language="php"] i { color: #777BB4; }
+.language-btn[data-language="web"] i { color: #E34F26; }
+
+/* Título del modal de lenguajes */
+#language-modal .modal-content h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+#language-modal .modal-content h2::before {
+    content: "\f121";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+/* Crear un header fijo para el modal */
+.modal-header {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contenedor para el contenido scrolleable */
+.modal-body {
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+/* Estilos para la sección Master */
+#master-level .level-header i {
+    color: var(--master-color);
+    font-size: 2rem;
+}
+
+.master-card {
+    background: linear-gradient(145deg, var(--card-background), #1a1f35);
+    border: 1px solid rgba(147, 51, 234, 0.3);
+}
+
+.master-card:hover {
+    border-color: var(--master-color);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.2);
+}
+
+.medal.master {
+    background: linear-gradient(135deg, var(--master-color), #7e22ce);
+}
+
+.master-btn {
+    background: linear-gradient(135deg, var(--master-color), #7e22ce);
+}
+
+.status.master {
+    color: var(--master-color);
+}
+
+/* Animación especial para las cards master */
+.master-card {
+    animation: masterPulse 3s infinite;
+}
+
+@keyframes masterPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(147, 51, 234, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(147, 51, 234, 0);
+    }
+}
+
+/* Estilos para las cards master según nivel */
+.master-basic {
+    background: linear-gradient(145deg, var(--card-background), #2d1810);
+    border: 1px solid rgba(205, 127, 50, 0.3);
+}
+
+.master-intermediate {
+    background: linear-gradient(145deg, var(--card-background), #2d2d2d);
+    border: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.master-advanced {
+    background: linear-gradient(145deg, var(--card-background), #2d2810);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Hover effects */
+.master-basic:hover {
+    border-color: var(--bronze-color);
+    box-shadow: 0 0 20px rgba(205, 127, 50, 0.2);
+}
+
+.master-intermediate:hover {
+    border-color: var(--silver-color);
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.2);
+}
+
+.master-advanced:hover {
+    border-color: var(--gold-color);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+/* Medallas según nivel */
+.medal.master-bronze {
+    background: linear-gradient(135deg, var(--bronze-color), #8B4513);
+}
+
+.medal.master-silver {
+    background: linear-gradient(135deg, var(--silver-color), #808080);
+}
+
+.medal.master-gold {
+    background: linear-gradient(135deg, var(--gold-color), #DAA520);
+}
+
+/* Botones según nivel */
+.master-basic-btn {
+    background: linear-gradient(135deg, var(--bronze-color), #8B4513);
+}
+
+.master-intermediate-btn {
+    background: linear-gradient(135deg, var(--silver-color), #808080);
+}
+
+.master-advanced-btn {
+    background: linear-gradient(135deg, var(--gold-color), #DAA520);
+}
+
+/* Estados según nivel */
+.status.master-basic {
+    color: var(--bronze-color);
+}
+
+.status.master-intermediate {
+    color: var(--silver-color);
+}
+
+.status.master-advanced {
+    color: var(--gold-color);
+}
+
+/* Animaciones personalizadas para cada nivel */
+.master-basic {
+    animation: masterBasicPulse 3s infinite;
+}
+
+.master-intermediate {
+    animation: masterIntermediatePulse 3s infinite;
+}
+
+.master-advanced {
+    animation: masterAdvancedPulse 3s infinite;
+}
+
+@keyframes masterBasicPulse {
+    0% { box-shadow: 0 0 0 0 rgba(205, 127, 50, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(205, 127, 50, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(205, 127, 50, 0); }
+}
+
+@keyframes masterIntermediatePulse {
+    0% { box-shadow: 0 0 0 0 rgba(192, 192, 192, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(192, 192, 192, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(192, 192, 192, 0); }
+}
+
+@keyframes masterAdvancedPulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+/* Estilos para el header de la sección master */
+.level-section#master-level .level-header i {
+    background: linear-gradient(135deg, var(--master-color), var(--master-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+/* Estilo para la corona en las tarjetas master */
+.medal.master-crown {
+    background: linear-gradient(135deg, var(--master-color), var(--master-secondary));
+}
+
+.medal.master-crown i {
+    color: #fff;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 2px rgba(220, 38, 38, 0.5));
+}
+
+/* Efecto hover para las coronas */
+.master-card:hover .medal.master-crown {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
+}
+
+/* Animación de brillo para la corona */
+@keyframes crownShine {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.3); }
+    100% { filter: brightness(1); }
+}
+
+.medal.master-crown {
+    animation: crownShine 2s infinite;
+}
+
+/* Estilos para la sección de premios */
+.rewards-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rewards-section h2 {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.rewards-section h2 i {
+    color: #FFD700;
+    margin-right: 0.5rem;
+}
+
+/* Estilos del podio */
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin: 3rem 0;
+    height: 400px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.podium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+    animation: shine 3s infinite;
+    border-radius: 1rem;
+}
+
+.podium-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.podium-place:hover {
+    transform: translateY(-10px);
+}
+
+.platform {
+    width: 160px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.first .platform { 
+    height: 220px; 
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+}
+.second .platform { 
+    height: 180px; 
+    background: linear-gradient(45deg, rgba(192, 192, 192, 0.1), rgba(192, 192, 192, 0.05));
+}
+.third .platform { 
+    height: 140px; 
+    background: linear-gradient(45deg, rgba(205, 127, 50, 0.1), rgba(205, 127, 50, 0.05));
+}
+
+.trophy {
+    position: relative;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: floatingTrophy 3s ease-in-out infinite;
+}
+
+.reward {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.winner-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.medals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.medals i.gold { color: #FFD700; }
+.medals i.silver { color: #C0C0C0; }
+.medals i.bronze { color: #CD7F32; }
+
+/* Actualización de la tabla de clasificación */
+.leaderboard-header,
+.leaderboard-row {
+    grid-template-columns: 80px 1fr 120px;
+}
+
+.medals-column {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+@keyframes shine {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
