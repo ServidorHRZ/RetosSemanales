@@ -1133,3 +1133,214 @@ body {
     transform: translateY(-2px);
   }
 }
+
+/* Mejoras específicas para móviles */
+@media (max-width: 768px) {
+  /* Header más compacto */
+  .main-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Mejoras en las tarjetas */
+  .challenge-card {
+    background: var(--card-background);
+    border-radius: 0.8rem;
+    margin: 0.8rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-header {
+    padding: 0.8rem;
+    gap: 0.8rem;
+    align-items: center;
+    flex-direction: row; /* Cambiado a row para mejor visualización */
+  }
+
+  .medal {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .difficulty {
+    font-size: 1rem;
+  }
+
+  .card-content {
+    padding: 0.8rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .card-footer {
+    padding: 0.8rem;
+    flex-direction: row; /* Mantener en row para mejor uso del espacio */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Mejoras en la sección de niveles */
+  .level-section {
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .level-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .level-header h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Mejoras en el podio */
+  .podium {
+    padding: 1.5rem;
+    gap: 1rem;
+    height: auto;
+    flex-direction: row; /* Mantener horizontal en móviles */
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2rem 0;
+  }
+
+  .platform {
+    width: 100px; /* Más compacto */
+    min-height: 80px;
+    padding: 0.8rem;
+  }
+
+  .first .platform { height: 140px; }
+  .second .platform { height: 120px; }
+  .third .platform { height: 100px; }
+
+  .trophy {
+    font-size: 2rem;
+  }
+
+  .reward {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  /* Mejoras en los modales */
+  .modal-content {
+    width: 95%;
+    max-height: 90vh;
+    padding: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  #challenge-title {
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .challenge-details {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .challenge-details p {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  /* Grid de lenguajes más compacto */
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .language-btn {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* Botones más táctiles */
+  .start-btn, .submit-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+}
+
+/* Mejoras adicionales para dispositivos muy pequeños */
+@media (max-width: 360px) {
+  .header-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .start-btn {
+    width: 100%;
+  }
+
+  .podium {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .platform {
+    width: 140px;
+  }
+
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mejoras para la interacción táctil */
+@media (hover: none) {
+  .challenge-card:active,
+  .language-btn:active,
+  .start-btn:active {
+    transform: scale(0.98);
+  }
+
+  .card-footer {
+    touch-action: manipulation;
+  }
+
+  .start-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Optimizaciones para pantallas de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .medal i,
+  .trophy i {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Mejoras de rendimiento */
+.challenge-card,
+.modal,
+.podium-place {
+  will-change: transform;
+  backface-visibility: hidden;
+}
